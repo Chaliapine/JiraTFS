@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0EDC68A8-A2D9-4F4C-91DD-BFCE6108BA6D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Model</RootNamespace>
+    <AssemblyName>Model</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bug.cs" />
+    <Compile Include="Command.cs" />
+    <Compile Include="Condition.cs" />
+    <Compile Include="Migrations\201608241007163_StateChanging.cs" />
+    <Compile Include="Migrations\201608241007163_StateChanging.Designer.cs">
+      <DependentUpon>201608241007163_StateChanging.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201608241158495_notMappedCommand.cs" />
+    <Compile Include="Migrations\201608241158495_notMappedCommand.Designer.cs">
+      <DependentUpon>201608241158495_notMappedCommand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201608241259518_ColumnRenaming.cs" />
+    <Compile Include="Migrations\201608241259518_ColumnRenaming.Designer.cs">
+      <DependentUpon>201608241259518_ColumnRenaming.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201608241533242_classRenaming.cs" />
+    <Compile Include="Migrations\201608241533242_classRenaming.Designer.cs">
+      <DependentUpon>201608241533242_classRenaming.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201608241542331_fieldRenaming.cs" />
+    <Compile Include="Migrations\201608241542331_fieldRenaming.Designer.cs">
+      <DependentUpon>201608241542331_fieldRenaming.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201608241546360_renamingFail.cs" />
+    <Compile Include="Migrations\201608241546360_renamingFail.Designer.cs">
+      <DependentUpon>201608241546360_renamingFail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201608260756284_SessionRefactored.cs" />
+    <Compile Include="Migrations\201608260756284_SessionRefactored.Designer.cs">
+      <DependentUpon>201608260756284_SessionRefactored.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201608291354543_removingAttrForOperation.cs" />
+    <Compile Include="Migrations\201608291354543_removingAttrForOperation.Designer.cs">
+      <DependentUpon>201608291354543_removingAttrForOperation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201608311201152_key.cs" />
+    <Compile Include="Migrations\201608311201152_key.Designer.cs">
+      <DependentUpon>201608311201152_key.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201610190708084_addedCondition.cs" />
+    <Compile Include="Migrations\201610190708084_addedCondition.Designer.cs">
+      <DependentUpon>201610190708084_addedCondition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SessionResult.cs" />
+    <Compile Include="StateChange.cs" />
+    <Compile Include="ConnectionData.cs" />
+    <Compile Include="Migrations\201608221414150_InitialCreate.cs" />
+    <Compile Include="Migrations\201608221414150_InitialCreate.Designer.cs">
+      <DependentUpon>201608221414150_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201608240856133_AddOperation.cs" />
+    <Compile Include="Migrations\201608240856133_AddOperation.Designer.cs">
+      <DependentUpon>201608240856133_AddOperation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="ModelContext.cs" />
+    <Compile Include="StateChangedCommand.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SessionChange.cs" />
+    <Compile Include="Session.cs" />
+    <Compile Include="StringExtensions.cs" />
+    <Compile Include="SyncDirection.cs" />
+    <Compile Include="SyncState.cs" />
+    <Compile Include="Tracker.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201608221414150_InitialCreate.resx">
+      <DependentUpon>201608221414150_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608240856133_AddOperation.resx">
+      <DependentUpon>201608240856133_AddOperation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608241007163_StateChanging.resx">
+      <DependentUpon>201608241007163_StateChanging.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608241158495_notMappedCommand.resx">
+      <DependentUpon>201608241158495_notMappedCommand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608241259518_ColumnRenaming.resx">
+      <DependentUpon>201608241259518_ColumnRenaming.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608241533242_classRenaming.resx">
+      <DependentUpon>201608241533242_classRenaming.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608241542331_fieldRenaming.resx">
+      <DependentUpon>201608241542331_fieldRenaming.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608241546360_renamingFail.resx">
+      <DependentUpon>201608241546360_renamingFail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608260756284_SessionRefactored.resx">
+      <DependentUpon>201608260756284_SessionRefactored.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608291354543_removingAttrForOperation.resx">
+      <DependentUpon>201608291354543_removingAttrForOperation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608311201152_key.resx">
+      <DependentUpon>201608311201152_key.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610190708084_addedCondition.resx">
+      <DependentUpon>201610190708084_addedCondition.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JiraTFS", "JiraTFS\JiraTFS.csproj", "{96FEC0B9-065E-4B54-9902-04BF48797329}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{0EDC68A8-A2D9-4F4C-91DD-BFCE6108BA6D}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://srv-tfs2012.axapta.local:8080/tfs/microsoftdepartmentcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = JiraTFS\\JiraTFS.csproj
+		SccProjectName1 = JiraTFS
+		SccLocalPath1 = JiraTFS
+		SccProjectUniqueName2 = Model\\Model.csproj
+		SccProjectName2 = Model
+		SccLocalPath2 = Model
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{96FEC0B9-065E-4B54-9902-04BF48797329}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96FEC0B9-065E-4B54-9902-04BF48797329}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96FEC0B9-065E-4B54-9902-04BF48797329}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96FEC0B9-065E-4B54-9902-04BF48797329}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EDC68A8-A2D9-4F4C-91DD-BFCE6108BA6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EDC68A8-A2D9-4F4C-91DD-BFCE6108BA6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EDC68A8-A2D9-4F4C-91DD-BFCE6108BA6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EDC68A8-A2D9-4F4C-91DD-BFCE6108BA6D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
